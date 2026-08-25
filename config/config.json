@@ -1,0 +1,64 @@
+{
+  "SCHEMA_VERSION": "0.1",
+  "directories": {
+    "config": "/data/Argo_Processing/S2_Decoder/config",
+    "incoming": "/data/Argo_Processing/S2_Decoderincoming",
+    "output": "/data/Argo_Processing/S2_Decoder/data",
+    "raw": "/data/Argo_Porcessing/S2_Decoder/data/raw",
+    "hex": "/data/Argo_Processing/S2_Decoder/data/hex",
+    "log": "/data/Argo_Processing/S2_Decoder/log"
+  },
+  "MOMSN0_threshold": 100000,
+  "DATE_FORMAT": "yyyy-mm-ddTHH:MM:SSZ",
+  "PRESSURE_GAIN": 0.04,
+  "PRESSURE_OFFSET": 10,
+  "CURRENT_GAIN": 1,
+  "CURRENT_OFFSET": 0,
+  "VOLTAGE_GAIN": 0.01,
+  "VOLTAGE_OFFSET": 0,
+  "prof": {
+    "CTD_Raw" : {
+      "PRES": { "gain":25, "offset":10, "col_width":7, "col_precision":2},
+      "TEMP": { "gain":1000, "offset":5, "col_width":6, "col_precision":3},
+      "PSAL": { "gain":1000, "offset":1, "col_width":6, "col_precision":3}
+    },
+    "CTD_Binned" : {
+      "PRES": { "gain":25, "offset":10, "col_width":7, "col_precision":2},
+      "TEMP": { "gain":1000, "offset":5, "col_width":6, "col_precision":3},
+      "PSAL": { "gain":1000, "offset":1, "col_width":6, "col_precision":3}
+    },
+    "CTD_Drift" : {
+      "PRES": { "gain":25, "offset":10, "col_width":7, "col_precision":2},
+      "TEMP": { "gain":1000, "offset":5, "col_width":6, "col_precision":3},
+      "PSAL": { "gain":1000, "offset":1, "col_width":6, "col_precision":3}
+    }
+  },
+  "packets": {
+    "00": {"profile": "GPS","name": "start-mission"},
+    "01": {"profile": "GPS","name": "start-dive"},
+    "02": {"profile": "GPS","name": "end-dive"},
+    "03": {"profile": "GPS","name": "abort"},
+    "05": {"profile": "GPS","name": "BIT pass"},
+    "06": {"profile": "GPS","name": "BIT fail"},
+    "DE": {"profile": "Mission","name":"Upload Command"},
+    "D0": {"profile": "Mission","name":"parameters"},
+    "F0": {"profile": "Argo", "name": "Mission"},
+    "40": {"profile": "Engineering","name":"Fall"},
+    "50": {"profile": "Engineering","name":"Rise"},
+    "60": {"profile": "Engineering","name":"Pump"},
+    "E0": {"profile": "Engineering","name":"diagnostic"},
+    "E2": {"profile": "Engineering","name":"parameters"},
+    "E3": {"profile": "Engineering","name":"BIT Beacon Mode"},
+    "E5": {"profile": "Engineering","name":"BIT OK"},
+    "E6": {"profile": "Engineering","name":"BIT FAIL"},
+    "10": {"profile": "CTD_Binned", "name": "PRES"},
+    "20": {"profile": "CTD_Binned", "name": "TEMP"},
+    "30": {"profile": "CTD_Binned", "name": "PSAL"},
+    "90": {"profile": "CTD_Raw", "name":"PRES"},
+    "A0": {"profile": "CTD_Raw", "name":"TEMP"},
+    "B0": {"profile": "CTD_Raw", "name":"PSAL"},
+    "98": {"profile": "CTD_Drift","name":"PRES"},
+    "A8": {"profile": "CTD_Drift","name":"TEMP"},
+    "B8": {"profile": "CTD_Drift","name":"PSAL"}
+  }
+}
