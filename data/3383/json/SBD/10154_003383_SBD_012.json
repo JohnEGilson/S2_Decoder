@@ -1,0 +1,26 @@
+{
+  "sbd_iridium_position_summary": [
+    { "source": "SBD", "TIME": "2026-05-11T12:37:35Z", "JULD": 27889.52610, "momsn": 188, "LATITUDE_iridium": -48.49028, "LONGITUDE_iridium": 164.09921, "error_iridium": 23000, "sbd_contains_cycle": 12 },
+    { "source": "SBD", "TIME": "2026-05-11T12:37:57Z", "JULD": 27889.52635, "momsn": 189, "LATITUDE_iridium": -48.49368, "LONGITUDE_iridium": 164.32230, "error_iridium": 30000, "sbd_contains_cycle": 12 },
+    { "source": "SBD", "TIME": "2026-05-11T12:39:16Z", "JULD": 27889.52727, "momsn": 190, "LATITUDE_iridium": -48.50819, "LONGITUDE_iridium": 164.42660, "error_iridium": 128000, "sbd_contains_cycle": 12 },
+    { "source": "SBD", "TIME": "2026-05-11T12:39:25Z", "JULD": 27889.52737, "momsn": 191, "LATITUDE_iridium": -48.50819, "LONGITUDE_iridium": 164.42660, "error_iridium": 152000, "sbd_contains_cycle": 12 },
+    { "source": "SBD", "TIME": "2026-05-11T12:39:36Z", "JULD": 27889.52750, "momsn": 192, "LATITUDE_iridium": -48.45502, "LONGITUDE_iridium": 165.67505, "error_iridium": 37000, "sbd_contains_cycle": 12 },
+    { "source": "SBD", "TIME": "2026-05-11T12:40:09Z", "JULD": 27889.52788, "momsn": 193, "LATITUDE_iridium": -48.50879, "LONGITUDE_iridium": 164.03229, "error_iridium": 4000, "sbd_contains_cycle": 12 },
+    { "source": "SBD", "TIME": "2026-05-11T12:40:42Z", "JULD": 27889.52826, "momsn": 194, "LATITUDE_iridium": -48.52263, "LONGITUDE_iridium": 164.53101, "error_iridium": 85000, "sbd_contains_cycle": 12 },
+    { "source": "SBD", "TIME": "2026-05-11T12:40:51Z", "JULD": 27889.52837, "momsn": 195, "LATITUDE_iridium": -48.49664, "LONGITUDE_iridium": 164.54544, "error_iridium": 82000, "sbd_contains_cycle": 12 },
+    { "source": "SBD", "TIME": "2026-05-11T12:41:00Z", "JULD": 27889.52847, "momsn": 196, "LATITUDE_iridium": -48.49664, "LONGITUDE_iridium": 164.54544, "error_iridium": 80000, "sbd_contains_cycle": 12 },
+    { "source": "SBD", "TIME": "2026-05-11T12:41:08Z", "JULD": 27889.52856, "momsn": 197, "LATITUDE_iridium": -48.50381, "LONGITUDE_iridium": 164.59764, "error_iridium": 77000, "sbd_contains_cycle": 12 },
+    { "source": "SBD", "TIME": "2026-05-11T12:41:17Z", "JULD": 27889.52867, "momsn": 198, "LATITUDE_iridium": -48.50381, "LONGITUDE_iridium": 164.59764, "error_iridium": 73000, "sbd_contains_cycle": 12 },
+    { "source": "SBD", "TIME": "2026-05-11T12:41:25Z", "JULD": 27889.52876, "momsn": 199, "LATITUDE_iridium": -48.50381, "LONGITUDE_iridium": 164.59764, "error_iridium": 74000, "sbd_contains_cycle": 12 },
+    { "source": "SBD", "TIME": "2026-05-11T12:43:15Z", "JULD": 27889.53003, "momsn": 200, "LATITUDE_iridium": -48.50381, "LONGITUDE_iridium": 164.59764, "error_iridium": 67000, "sbd_contains_cycle": 12 },
+    { "source": "SBD", "TIME": "2026-05-11T12:43:36Z", "JULD": 27889.53028, "momsn": 201, "LATITUDE_iridium": -48.50381, "LONGITUDE_iridium": 164.59764, "error_iridium": 68000, "sbd_contains_cycle": 12 },
+    { "source": "SBD", "TIME": "2026-05-11T12:44:05Z", "JULD": 27889.53061, "momsn": 202, "LATITUDE_iridium": -48.50381, "LONGITUDE_iridium": 164.59764, "error_iridium": 69000, "sbd_contains_cycle": 12 },
+    { "source": "SBD", "TIME": "2026-05-11T12:44:19Z", "JULD": 27889.53078, "momsn": 203, "LATITUDE_iridium": -48.50381, "LONGITUDE_iridium": 164.59764, "error_iridium": 70000, "sbd_contains_cycle": 12 },
+    { "source": "SBD", "TIME": "2026-05-11T12:44:29Z", "JULD": 27889.53089, "momsn": 204, "LATITUDE_iridium": -48.49664, "LONGITUDE_iridium": 164.54544, "error_iridium": 72000, "sbd_contains_cycle": 12 },
+    { "source": "SBD", "TIME": "2026-05-11T12:44:42Z", "JULD": 27889.53104, "momsn": 205, "LATITUDE_iridium": -48.47279, "LONGITUDE_iridium": 164.54544, "error_iridium": 415000, "sbd_contains_cycle": 12 }
+  ],
+  "sbd_weighted_iridium_position": [
+     { "JULD": 27889.52873, "LATITUDE": -48.507, "LONGITUDE": 164.062, "POSITION_ERROR_ESTIMATED": 3868,
+       "POSITION_ERROR_COMMENT": "A subset of the available Iridium Positions were used that are deemed 'independent': 9; Error was computed as the square root of the inverse sum of the weights, where each weight is the inverse square of the individual measurement error: Weights=1/(error^2)" } 
+  ]
+}

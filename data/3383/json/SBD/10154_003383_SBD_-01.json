@@ -1,0 +1,12 @@
+{
+  "sbd_iridium_position_summary": [
+    { "source": "SBD", "TIME": "2025-11-10T02:53:17Z", "JULD": 27707.12034, "momsn": 12, "LATITUDE_iridium": -41.27354, "LONGITUDE_iridium": 174.88341, "error_iridium": 26000, "sbd_contains_cycle": -1 },
+    { "source": "SBD", "TIME": "2025-11-10T02:55:58Z", "JULD": 27707.12220, "momsn": 13, "LATITUDE_iridium": -41.31783, "LONGITUDE_iridium": 174.73634, "error_iridium": 49000, "sbd_contains_cycle": -1 },
+    { "source": "SBD", "TIME": "2025-11-10T02:56:11Z", "JULD": 27707.12235, "momsn": 14, "LATITUDE_iridium": -41.32000, "LONGITUDE_iridium": 174.78394, "error_iridium": 43000, "sbd_contains_cycle": -1 },
+    { "source": "SBD", "TIME": "2025-11-10T02:56:22Z", "JULD": 27707.12248, "momsn": 15, "LATITUDE_iridium": -41.32000, "LONGITUDE_iridium": 174.78394, "error_iridium": 39000, "sbd_contains_cycle": -1 }
+  ],
+  "sbd_weighted_iridium_position": [
+     { "JULD": 27707.12184, "LATITUDE": -41.293, "LONGITUDE": 174.834, "POSITION_ERROR_ESTIMATED": 19790,
+       "POSITION_ERROR_COMMENT": "A subset of the available Iridium Positions were used that are deemed 'independent': 3; Error was computed as the square root of the inverse sum of the weights, where each weight is the inverse square of the individual measurement error: Weights=1/(error^2)" } 
+  ]
+}
