@@ -1,5 +1,5 @@
 <h1>S2 Decoder</h1>
-<p>S2 Decoder is a free and open-source decoder (GPL-3.0) to convert raw S2 telemetry into human readable .json files</p>
+<p>S2 Decoder is a free and open-source decoder (GPL-3.0) to convert raw SOLO-II telemetry into human readable .json files</p>
 
 <h2>Acknowledgements</h2>
 <p>S2_Decoder code uses an existing codebase as a foundational starting point, modifying it to be used with a related Argo float model.</p>
