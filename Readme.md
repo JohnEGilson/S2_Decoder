@@ -175,7 +175,7 @@ cd 06 b6 02 03 70 c5 0f 00 4a 05 8c 0b 3f 02 06 d0 47 14 00 12 05 be 04 db 02 09
 ```
 
 <h3>ARGO_Mission</h3>
-<p>The ARGO Mission packet summarizes a subset of the current float CONFIG used in the present cycle. It includes firmware version information, profile targets and durations, as well as the CTD gains and offsets. This packet may not be transmitted every cycle.<p>
+<p>The ARGO Mission packet summarizes a subset of the current float CONFIG used in the present cycle. It includes firmware version information, profile targets and durations, as well as the CTD gains and offsets. This packet may not be transmitted every cycle.</p>
 
 ```javascript
 {
@@ -225,6 +225,7 @@ cd 06 b6 02 03 70 c5 0f 00 4a 05 8c 0b 3f 02 06 d0 47 14 00 12 05 be 04 db 02 09
 
 <h3>Buoyancy Pump</h3>
 <p>S2 floats transmit a buoyancy pump record. The measured pressure and phase closely matches the same fields in the Rise/Fall (but may not always match)</p>
+
 ```javascript
 {
   "Pump": [
@@ -242,6 +243,7 @@ cd 06 b6 02 03 70 c5 0f 00 4a 05 8c 0b 3f 02 06 d0 47 14 00 12 05 be 04 db 02 09
 
 <h3>Engineering</h3>
 <p>S2 floats transmit a various float Engineering values to track float health. "Eng_ver" is used to identify the correct engineering format in the /config directory.</p>
+
 ```javascript
 {
   "Engineering_Data": {
@@ -263,6 +265,7 @@ cd 06 b6 02 03 70 c5 0f 00 4a 05 8c 0b 3f 02 06 d0 47 14 00 12 05 be 04 db 02 09
 
 <h3>Profile Data ("CTD_Raw", "CTD_Binned", "CTD_Drift"</h3>
 <p>S2 floats transmit 3 types of scientific CTD sensor profiles.</p>
+
 ```javascript
 {
   "CTD_Binned": [
