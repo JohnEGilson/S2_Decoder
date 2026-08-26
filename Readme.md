@@ -263,7 +263,7 @@ cd 06 b6 02 03 70 c5 0f 00 4a 05 8c 0b 3f 02 06 d0 47 14 00 12 05 be 04 db 02 09
 }
 ```
 
-<h3>Profile Data ("CTD_Raw", "CTD_Binned", "CTD_Drift"</h3>
+<h3>Profile Data ("CTD_Raw", "CTD_Binned", "CTD_Drift")</h3>
 <p>S2 floats transmit 3 types of scientific CTD sensor profiles.</p>
 
 ```javascript
