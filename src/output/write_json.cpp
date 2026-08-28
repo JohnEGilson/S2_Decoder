@@ -172,11 +172,9 @@ void hexfile::write_JSON() {
   ssjg.str("");
   ssjg.clear();
   if (cycle<0) {
-    ssjg << std::string(config["directories"]["output"]) << "/" << std::setw(4) << std::setfill('0') << std::to_string(sn) << "/json/L0/" << std::setw(4) << std::setfill('0') << DACid << "_" << std::setw(6) << std::setfill('0') << TRid << "_L0_-01.json";
-  } else if (cycle>999) {
-    ssjg << std::string(config["directories"]["output"]) << "/" << std::setw(4) << std::setfill('0') << std::to_string(sn) << "/json/L0/" << std::setw(4) << std::setfill('0') << DACid << "_" << std::setw(6) << std::setfill('0') << TRid << "_L0_" << std::setw(4) << std::setfill('0') << std::to_string(cycle) << ".json";
+    ssjg << std::string(config["directories"]["output"]) << "/" << std::setw(4) << std::setfill('0') << std::to_string(sn) << "/json/L0/" << std::setw(4) << std::setfill('0') << DACid << "_" << std::setw(6) << std::setfill('0') << TRid << "_L0_-001.json";
   } else {
-      ssjg << std::string(config["directories"]["output"]) << "/" << std::setw(4) << std::setfill('0') << std::to_string(sn) << "/json/L0/" << std::setw(4) << std::setfill('0') << DACid << "_" << std::setw(6) << std::setfill('0') << TRid << "_L0_" << std::setw(3) << std::setfill('0') << std::to_string(cycle) << ".json";
+    ssjg << std::string(config["directories"]["output"]) << "/" << std::setw(4) << std::setfill('0') << std::to_string(sn) << "/json/L0/" << std::setw(4) << std::setfill('0') << DACid << "_" << std::setw(6) << std::setfill('0') << TRid << "_L0_" << std::setw(4) << std::setfill('0') << std::to_string(cycle) << ".json";
   }
   jsonpath = ssjg.str();
 
