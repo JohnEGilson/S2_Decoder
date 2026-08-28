@@ -2,7 +2,7 @@
 <p>S2 Decoder is a free and open-source decoder (GPL-3.0) to convert raw SOLO-II telemetry into human readable .json files</p>
 
 <h2>Acknowledgements</h2>
-<p>S2_Decoder code uses an existing codebase as a foundational starting point, modifying it to be used with a related Argo float model.</p>
+<p>S2_Decoder code uses an existing codebase as a foundational starting point, modifying it to be used with a related Argo float model.</p> 
 <p>[Original Project Name]: https://github.com/Greenwood1981/S2BGC_Decoder</p>
 
 <h2>Requirements</h2>
@@ -42,25 +42,25 @@ S2_Decoder/
 │  ├─ 3383/ (Following the example data provided)
 │  │  ├─ 3383_meta.json   (float specific meta info added near the top of each .json file)
 │  │  ├─ hex
-│  │  │  ├─ 3383_000.hex  (hex files are placed in this subdirectory after being processed)
-│  │  │  ├─ 3383_001.hex
+│  │  │  ├─ 3383_0000.hex  (hex files are placed in this subdirectory after being processed)
+│  │  │  ├─ 3383_0001.hex
 │  │  ├─ json
 │  │  │  ├─ L0
-│  │  │  |    3383_L0_000.json (decoded .json file)
-│  │  │  |    3383_L0_001.json (decoded .json file)
+│  │  │  |    3383_L0_0000.json (decoded .json file)
+│  │  │  |    3383_L0_0001.json (decoded .json file)
 │  │  │  ├─ SBD
-│  │  │  |    3383_SBD_000.json (decoded .json file created from SBD_S2.cpp)
-│  │  │  |    3383_SBD_001.json (decoded .json file created from SBD_S2.cpp)
+│  │  │  |    3383_SBD_0000.json (decoded .json file created from SBD_S2.cpp)
+│  │  │  |    3383_SBD_0001.json (decoded .json file created from SBD_S2.cpp)
 │  │  │  ├─ L1
-│  │  │  |    3383_L1_000.json (decoded .json file created from L0toL1_S2.cpp)
-│  │  │  |    3383_L1_001.json (decoded .json file created from L0toL1_S2.cpp)
+│  │  │  |    3383_L1_0000.json (decoded .json file created from L0toL1_S2.cpp)
+│  │  │  |    3383_L1_0001.json (decoded .json file created from L0toL1_S2.cpp)
 │  ├─ 33xx/
 │  │  ├─ 33xx_meta.json
 │  │  ├─ hex
 │  │  ├─ json
 ├─ incoming/
-│  ├─ 3383_002.hex        (unprocessed hex files)
-│  ├─ 3383_003.hex
+│  ├─ 3383_0002.hex        (unprocessed hex files)
+│  ├─ 3383_0003.hex
 ├─ log/                   (daily log files are generated and placed in this subdirectory)
 ├─ src/                   (Decoder c++ source code)
 </pre>
