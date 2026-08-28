@@ -79,9 +79,9 @@ int main( int argc, char **argv) {
     ss.str("");
     ss.clear();
     if (cycle<0) {
-      ss << std::setw(4) << std::setfill('0') << std::to_string(sn) << "_-01.hex"; // S2_Decoder [sn] [cycle]
+      ss << std::setw(4) << std::setfill('0') << std::to_string(sn) << "_-001.hex"; // S2_Decoder [sn] [cycle]
     } else {
-      ss << std::setw(4) << std::setfill('0') << std::to_string(sn) << "_" << std::setw(3) << std::setfill('0') << std::to_string(cycle) << ".hex"; // S2_Decoder [sn] [cycle]
+      ss << std::setw(4) << std::setfill('0') << std::to_string(sn) << "_" << std::setw(4) << std::setfill('0') << std::to_string(cycle) << ".hex"; // S2_Decoder [sn] [cycle]
     }
     filter_filename = ss.str();
     ss.str("");
