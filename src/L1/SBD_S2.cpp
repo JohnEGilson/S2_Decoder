@@ -471,10 +471,9 @@ int main( int argc, char* argv[] ) {
     value = std::stoi(argv[2]);
     std::string padcy;
     if ( value == -1 ) {
-      padcy="-01";
+      padcy="-001";
     } else {
-      padwidth=3;
-      if ( value >= 1000 ) { padwidth=4; }
+      padwidth=4;
       std::ostringstream padoscy;
       padoscy << std::setw(padwidth) << std::setfill('0') << value;
       padcy=padoscy.str();
