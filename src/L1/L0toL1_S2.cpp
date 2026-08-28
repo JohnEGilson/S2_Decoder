@@ -946,15 +946,12 @@ void rewrite_json(std::string filename, const json &Doc_L0) {
           is <<  999999 << "_SBD_";
 	}
         int cyn = Doc_L0.at("CYCLE_NUMBER");
-	if ( cyn > 99 ) {
-          ss << cyn << ".json";
-          is << cyn << ".json";
-	} else if ( cyn > -1 ) {
-          ss << std::setw(3) << std::setfill('0') << cyn << ".json";
-          is << std::setw(3) << std::setfill('0') << cyn << ".json";
+	if ( cyn > -1 ) {
+          ss << std::setw(4) << std::setfill('0') << cyn << ".json";
+          is << std::setw(4) << std::setfill('0') << cyn << ".json";
 	} else {
-          ss << "-01" << ".json";
-          is << "-01" << ".json";
+          ss << "-001" << ".json";
+          is << "-001" << ".json";
 	}
 	std::string outFile = ss.str();
 	std::string sbdFile = is.str();
