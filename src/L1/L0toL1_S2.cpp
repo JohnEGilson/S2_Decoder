@@ -1285,11 +1285,15 @@ void rewrite_json(std::string filename, const json &Doc_L0) {
 	     write_BIST( fout, "BIT", "vacuum_transmit_inHg" , Doc_L0 ,5,2,0);
 	     write_BIST( fout, "BIT", "vacuum_abort_inHg" , Doc_L0 ,5,2,0);
 	     write_BIST( fout, "BIT", "last_interrupt" , Doc_L0 ,1,0,0);
-	     write_BIST( fout, "BIT", "abortFlag" , Doc_L0 ,2,0,0);
-	     write_BIST( fout, "BIT", "CPUtemp" , Doc_L0 ,4,2,0);
-	     write_BIST( fout, "BIT", "RH" , Doc_L0 ,2,0,1);
-          } else {
-             fout << "    \"status\": " << Doc_L0["BIT"]["status"] << "," << std::endl;
+	     if (Doc_L0["BIT"]["Eng_ver"] >= 6) {
+               write_BIST( fout, "BIT", "abortFlag" , Doc_L0 ,2,0,0);
+               write_BIST( fout, "BIT", "CPUtemp" , Doc_L0 ,4,2,0);
+               write_BIST( fout, "BIT", "RH" , Doc_L0 ,2,0,1);
+         } else {
+               write_BIST( fout, "BIT", "abortFlag" , Doc_L0 ,2,0,1);
+         }
+      } else {
+         fout << "    \"status\": " << Doc_L0["BIT"]["status"] << "," << std::endl;
 	     write_BIST( fout, "BIT", "Eng_ver" , Doc_L0 ,1,0,0);
 	     write_BIST( fout, "BIT", "blocks_queued" , Doc_L0 ,1,0,0);
 	     write_BIST( fout, "BIT", "pressure" , Doc_L0 ,5,resp,0);
